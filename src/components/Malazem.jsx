@@ -20,10 +20,10 @@ const Malazem = () => {
           linkTitle="Structured Programming"
         />
         <MalazemBox
-          img={cybersecurity}
+          img={cyberscurity}
           title="الأمن السيبراني هو المجال الذي يهتم بحماية أنظمة المعلومات، والشبكات، والبرمجيات، والبيانات من التهديدات الإلكترونية والهجمات السيبرانية."
-          pageLink="/cyberscurity"
-          linkTitle="Cyberscurity"
+          pageLink="/cybersecurity"
+          linkTitle="Cybersecurity"
         />
         <MalazemBox
           img={computerSkills}
