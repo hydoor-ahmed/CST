@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  @import url("https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,1000&display=swap");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Cairo", sans-serif;
+  color: white;
+}
+
+body {
+  background: #0f172a;
+  /* height: 100000px; */
+  overflow-x: hidden !important;
+}
+
+.button {
+  background: #94a3b81a;
+  border-radius: 12px;
+  display: block;
+}
+
+.button:hover {
+  transition: 0.3s ease-in-out;
+  background: #94a3b833;
+}
+
+.landing {
+  height: calc(100vh - 64px);
+}
+
+.floating-animation {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.close {
+  transition: 0.3s ease-in-out;
+  height: 0px;
+}
+
+@media (max-width: 768px) {
+  .open {
+    transition: 0.3s ease-in-out;
+    height: 175px;
+  }
+}
+
+.down-icon {
+  animation: updown 2s ease infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.hackSec-shadow {
+  box-shadow: 1px 1px 19px #17223c;
+}
+
+.htb-link-color {
+  color: #9fef00;
+  text-decoration: solid;
+  text-decoration-line: underline;
+}
+.cybrary-link-color {
+  color: #999999;
+  text-decoration: solid;
+  text-decoration-line: underline;
+}
+.tryhackme-link-color {
+  color: #7d7d7d;
+  text-decoration: solid;
+  text-decoration-line: underline;
+}
+.portSwigger-link-color {
+  color: #f63;
+  text-decoration: solid;
+  text-decoration-line: underline;
+}
+
+.line {
+  @apply border-b-[2.5px] border-blue-700 w-fit;
+}
+
+.textGlow {
+  text-shadow: 0 0 6px #ffffffc9;
+}
+
+.explanBox {
+  /* background-color: rgba(148, 163, 184, 0.1); */
+  border-width: 1px;
+  border-top-right-radius: 5px;
+  border-color: rgba(255, 255, 255, 0.091);
+  box-shadow: 0px 0px 4px 1px #b0b0b01b;
+  background-image: linear-gradient(68deg, #23355780, #1f5e9fa3);
+}
+
+.malazem-box {
+  background: linear-gradient(227deg, #1c2639, #0f1729);
+}
+
+.malazem-box > div > img {
+  transition: .3s;
+}
+
+.malazem-box:hover > div > img {
+  transform: scale(1.2) rotate(8deg);
+}
+
+.glow-on-hover {
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #1c2639;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: white;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1c2639;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.image-zoom {
+  transition: all 0.8s ease-in-out;
+  transform: scale(5);
+}
