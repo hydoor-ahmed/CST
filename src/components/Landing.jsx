@@ -13,11 +13,16 @@ const Landing = () => {
             CyberScurity Team
           </h1>
           <p className="text-sm md:text-base text-center md:text-left md:w-[500px]">
-          الأمن السيبراني هو مجال متخصص يهتم بحماية الأنظمة والشبكات والبرامج من الهجمات الإلكترونية. يشمل ذلك تطبيق مجموعة من التقنيات، والسياسات، والممارسات الأمنية لحماية البيانات من الوصول غير المصرح به أو التلف.
+            الأمن السيبراني هو مجال متخصص يهتم بحماية الأنظمة والشبكات والبرامج
+            من الهجمات الإلكترونية. يشمل ذلك تطبيق مجموعة من التقنيات،
+            والسياسات، والممارسات الأمنية لحماية البيانات من الوصول غير المصرح
+            به أو التلف.
           </p>
         </div>
       </div>
-      <i className="bx bx-chevron-down bx-tada text-3xl text-center w-full"></i>
+      <div className="w-full text-center">
+        <i className="bx bx-chevron-down bx-tada text-3xl"></i>
+      </div>
     </div>
   );
 };

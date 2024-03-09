@@ -13,6 +13,7 @@ html {
 * {
   font-family: "Cairo", sans-serif;
   color: white;
+  user-select: none;
 }
 
 body {
@@ -131,7 +132,7 @@ body {
 }
 
 .malazem-box > div > img {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .malazem-box:hover > div > img {

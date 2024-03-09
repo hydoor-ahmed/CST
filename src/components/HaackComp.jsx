@@ -1,9 +1,13 @@
 const HaackComp = ({ img, explan, link, color, linkTitle, title }) => {
   return (
-    <div className="mt-[100px]" d data-aos="zoom-out">
+    <div
+      className="mt-[100px]"
+      data-aos="fade-left"
+      data-aos-duration="1500"
+    >
       <div className="px-6 border border-slate-800 hackSec-shadow rounded-xl py-12 flex flex-col lg:flex-row-reverse justify-evenly items-center">
         <div className="w-[100%] sm:max-w-[300px] sm:w-[400px] mb-6 lg:mb-0 lg:border-slate-800 lg:border-r lg:pr-10">
-          <img className="mx-auto" src={img} alt="Htb Logo" />
+          <img className="mx-auto" src={img} alt="Hack Section Image." />
         </div>
 
         <div className="text-right">

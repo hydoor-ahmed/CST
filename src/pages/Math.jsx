@@ -1,7 +1,7 @@
 const Math = () => {
   return (
-    <div>
-      Math Page.
+    <div className="py-[100px] text-center text-2xl">
+      .Math Page <strong>Soon</strong>
     </div>
   )
 }

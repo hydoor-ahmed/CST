@@ -11,7 +11,7 @@ const Explan = () => {
   };
   return (
     <div className="pt-[100px]" style={style}>
-      <h1 className="text-7xl font-extrabold">
+      <h1 className="text-2xl md:text-7xl font-extrabold">
         ..Comming Soon
         <Link
           to="/"
