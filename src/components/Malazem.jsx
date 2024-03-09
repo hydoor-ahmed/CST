@@ -9,7 +9,7 @@ const Malazem = () => {
   return (
     <div className="pt-[100px]">
       <h1 className="line pb-2 block mx-auto mb-8 transition-all duration-700 hover:tracking-[4px]">
-        ملازم قسم الأمن السيبراني
+        مواد قسم الأمن السيبراني
       </h1>
 
       <div className="container grid grid-cols-1 sm:flex justify-evenly items-center flex-wrap gap-y-9">
@@ -20,7 +20,7 @@ const Malazem = () => {
           linkTitle="Structured Programming"
         />
         <MalazemBox
-          img={cyberscurity}
+          img={cybersecurity}
           title="الأمن السيبراني هو المجال الذي يهتم بحماية أنظمة المعلومات، والشبكات، والبرمجيات، والبيانات من التهديدات الإلكترونية والهجمات السيبرانية."
           pageLink="/cyberscurity"
           linkTitle="Cyberscurity"
