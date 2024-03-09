@@ -10,7 +10,7 @@ const Landing = () => {
 
         <div className="sm:ml-6 lg:ml-0">
           <h1 className="text-2xl md:text-4xl text-center md:text-left mb-7 mt-3 font-bold">
-            CyberScurity Team
+            CyberSecurity Team
           </h1>
           <p className="text-sm md:text-base text-center md:text-left md:w-[500px]">
             الأمن السيبراني هو مجال متخصص يهتم بحماية الأنظمة والشبكات والبرامج
