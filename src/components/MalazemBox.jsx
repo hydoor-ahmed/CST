@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 const MalazemBox = ({ img, title, pageLink, linkTitle }) => {
   return (
     <div
-      className="overflow-hidden rounded-xl malazem-box flex flex-col sm:flex-row-reverse mx-auto sm:mx-0 sm:justify-between items-center sm:max-w-[500px] sm:w-[500px] sm:max-h-[230px] sm:h-[230px] xsw-[70%]"
-      data-aos="fade-right"
-      data-aos-duration="1500"
-    >
+      className="overflow-hidden rounded-xl malazem-box flex flex-col sm:flex-row-reverse mx-auto sm:mx-0 sm:justify-between items-center sm:max-w-[500px] sm:w-[500px] sm:max-h-[230px] sm:h-[230px]">
       <div className="overflow-hidden sm:max-w-1/2 sm:w-1/2 sm:h-full">
         <img
           loading="lazy"
