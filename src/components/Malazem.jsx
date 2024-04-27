@@ -1,9 +1,11 @@
 import MalazemBox from "./MalazemBox";
-import programmingImg from "../assets/malazem/programming.jpg";
-import cyberscurity from "../assets/malazem/cyberscurity.jpg";
-import computerSkills from "../assets/malazem/cmputer-skills.jpg";
+import digital from "../assets/malazem/digital.jpg";
+import programming from "../assets/malazem/programming.jpg";
+import HumanRights from "../assets/malazem/human-rights.png";
 import math from "../assets/malazem/math.jpg";
-import physics from "../assets/malazem/physics.jpg";
+import networks from "../assets/malazem/networks.jpg";
+import engineeringDrawing from "../assets/malazem/engineeringDrawing.jpg";
+import arabicLang from "../assets/malazem/arabicLang.webp";
 
 const Malazem = () => {
   return (
@@ -14,22 +16,22 @@ const Malazem = () => {
 
       <div className="container grid grid-cols-1 sm:flex justify-evenly items-center flex-wrap gap-y-9">
         <MalazemBox
-          img={programmingImg}
-          title="البرمجة المهيكلة هي نهج لتطوير البرمجيات يهدف إلى تحسين قابلية فهم الكود، تسهيل التصحيح، وتسريع عملية التطوير من خلال تقسيم البرنامج إلى وحدات أو كتل صغيرة ومنفصلة."
-          pageLink="/structured-programming"
-          linkTitle="Structured Programming"
+          img={digital}
+          title="مصطلح يشير إلى مبادئ الإلكترونيات الرقمية والأساسيات التقنية التي تحكم عملية التشفير والتفكيك في الأنظمة الرقمية"
+          pageLink="/digital-fundamentals"
+          linkTitle="Digital Fundamentals"
         />
         <MalazemBox
-          img={cyberscurity}
-          title="الأمن السيبراني هو المجال الذي يهتم بحماية أنظمة المعلومات، والشبكات، والبرمجيات، والبيانات من التهديدات الإلكترونية والهجمات السيبرانية."
-          pageLink="/cybersecurity"
-          linkTitle="Cybersecurity"
+          img={programming}
+          title="البرمجة هي عملية كتابة مجموعة من التعليمات أو الأوامر التي تقوم بتحديد سلوك الحاسوب للقيام بمهمة معينة."
+          pageLink="/programming"
+          linkTitle="Programming"
         />
         <MalazemBox
-          img={computerSkills}
-          title="مهارات الحاسوب هي مجموعة المعرفة والمهارات التقنية التي يحتاجها الفرد للعمل بفعالية مع التكنولوجيا الحاسوبية."
-          pageLink="/computer-skills"
-          linkTitle="Computer Skills"
+          img={HumanRights}
+          title="حقوق الإنسان هي الحقوق الأساسية والتي تنص عليها المعايير الدولية لحماية كرامة الإنسان وضمان حياته بكرامة وحرية."
+          pageLink="/human-rights"
+          linkTitle="Human Rights"
         />
         <MalazemBox
           img={math}
@@ -38,10 +40,22 @@ const Malazem = () => {
           linkTitle="Mathmatics"
         />
         <MalazemBox
-          img={physics}
-          title="الدوائر الكهربائية هي تركيبات من مكونات كهربائية متصلة ببعضها البعض بواسطة موصلات كهربائية لتشكيل مسار لتدفق التيار الكهربائي."
-          pageLink="/electric-circuit"
-          linkTitle="Electric Circuit"
+          img={networks}
+          title="الشبكات هي نظم تكنولوجية تمكن الأجهزة المختلفة من التواصل مع بعضها البعض لمشاركة المعلومات والموارد. يمكن أن تكون هذه الأجهزة أجهزة كمبيوتر، هواتف ذكية، طابعات، أجهزة تخزين، أو أي نوع من الأجهزة التي يمكنها التواصل عبر الشبكة."
+          pageLink="/networks"
+          linkTitle="Networks"
+        />
+        <MalazemBox
+          img={engineeringDrawing}
+          title="الرسم الهندسي هو عملية تمثيل الأشكال والأجسام بواسطة خطوط وأشكال هندسية محددة وفقًا لمعايير محددة. يهدف الرسم الهندسي إلى توضيح التصاميم والأبعاد والتفاصيل التقنية للأشياء بشكل دقيق وواضح. "
+          pageLink="/engineering-drawing"
+          linkTitle="Engineering drawing"
+        />
+        <MalazemBox
+          img={arabicLang}
+          title="اللغة العربية هي واحدة من أقدم اللغات في العالم، وهي لغة سامية تستخدم بشكل واسع في الوطن العربي وبعض البلدان الأخرى. "
+          pageLink="/arabic-language"
+          linkTitle="Arabic Language"
         />
       </div>
     </div>
